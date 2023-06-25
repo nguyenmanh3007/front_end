@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 10px;
+            overflow: auto;
+        }
+        .post{
+            background-color: aqua;
+            width: 560px;
+            float: left;
+            height: 300px;
+        }
+        .sidebar{
+            background-color: red;
+            width: 400px;
+            float: right;
+            height: 300px;
+        }
+        /* .clear{
+            clear: both;
+        } */
+        h2 { 
+            color: red; 
+        }
+        h2.title  { 
+            color: blue; 
+        }
+        div h2.title  { 
+            color: orange; 
+        }
+        .head h2.title  {
+            color: green; 
+        }
+        div.head h2.title  {
+            color: gray; 
+        }
+        div.head h2.title:last-child  {
+            color: yellow; 
+        }
+        #main div.head h2.title  {
+            color: pink; 
+        }
+        #main div#head h2.title  {
+            color: purple; 
+        }
+        #main div#head h2.title::first-letter  {
+            color: red; 
+        }
+        #main div#head h2::first-letter  {
+            color: yellow; 
+        }
+        [data-text]::before {
+            content: attr(data-text);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post">Nội dung post</div>
+        <div class="sidebar">Nội dung sidebar</div>
+        <div class="clear"></div>
+    </div>
+    <main id="main">
+        <div class="head" id="head">
+              <h2 class="title">
+                Tiêu đề 1
+              </h2>
+              <h2 class="title">
+                Tiêu đề 2
+              </h2>
+        </div>
+    </main>
+    <span data-text="Xin chào ">le thi no</span>
+
+        
+</body>
+</html>

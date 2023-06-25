@@ -1,0 +1,35 @@
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: #92DFC8;
+    text-align: center;
+    padding: 20px;
+}
+.section-one{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.content{
+    background-color: #CAEFF2; 
+    width: calc(100% - 30%);
+    float: left;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+}
+.aside{
+    background-color: #EED5C7;
+    width: 30%;
+    float: right;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+}
+.fix-clear{
+    clear: both3
+    ;
+}
